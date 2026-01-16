@@ -2,3 +2,4 @@ pygame
 numpy
 pyinstaller
 soundcard
+sounddevice

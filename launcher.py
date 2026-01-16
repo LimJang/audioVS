@@ -3,6 +3,7 @@ from tkinter import ttk
 import multiprocessing
 import soundcard as sc
 from visualizer import run_visualizer
+from generator import ToneGeneratorWindow
 
 class ControlPanel:
     def __init__(self, root):
@@ -62,6 +63,9 @@ class ControlPanel:
         self.lbl_status = tk.Label(root, text="Status: Running", fg="green")
         self.lbl_status.pack(pady=20)
         
+        btn_gen = tk.Button(root, text="Open Frequency Generator", command=self.open_generator, bg="#ddffff", width=25)
+        btn_gen.pack(pady=5)
+
         btn_quit = tk.Button(root, text="Quit All", command=self.close_app, bg="#ffdddd", width=20)
         btn_quit.pack(side=tk.BOTTOM, pady=20)
 
@@ -105,6 +109,9 @@ class ControlPanel:
             self.msg_queue.put(("SET_THEME", theme_code))
         except Exception as e:
             print(f"Error: {e}")
+
+    def open_generator(self):
+        ToneGeneratorWindow(self.root)
 
     def check_status(self):
         try:
