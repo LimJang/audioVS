@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+.env
+
+# Distribution / Packaging
+build/
+dist/
+*.spec
+!AudioVisualizer.spec
+
+# PyInstaller
+*.manifest
+
+# IDEs
+.vscode/
+.idea/

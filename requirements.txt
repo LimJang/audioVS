@@ -1,0 +1,4 @@
+pygame
+numpy
+pyinstaller
+soundcard
