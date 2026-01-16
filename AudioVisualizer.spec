@@ -4,7 +4,7 @@
 a = Analysis(
     ['launcher.py'],
     pathex=[],
-    binaries=[],
+    binaries=[('dsp_engine.dll', '.')],
     datas=[],
     hiddenimports=['soundcard', 'sounddevice'],
     hookspath=[],

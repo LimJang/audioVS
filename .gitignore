@@ -14,9 +14,17 @@ dist/
 *.spec
 !AudioVisualizer.spec
 
+# Compiler & Tools (New)
+compiler/
+*.zip
+*.7z
+unzip_compiler.py
+re_unzip.py
+
 # PyInstaller
 *.manifest
 
 # IDEs
 .vscode/
 .idea/
+mingw64/
